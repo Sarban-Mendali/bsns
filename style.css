@@ -683,7 +683,7 @@ footer {
             flex: 1;
             height: 550px;
             /* Use 'contain' so the whole product fits without cropping, and 'no-repeat' so it doesn't tile */
-            background: url('image_621e6d.png') center/contain no-repeat;
+            background: url('mobile-product-image.jpg') center/contain no-repeat;
             background-color: transparent; /* Allows your site's oat color to show behind the image */
             position: relative;
             border-radius: 2px;
