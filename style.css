@@ -679,33 +679,14 @@ footer {
         height: 70px;
     }
 
-    .hero-content h1 {
-        font-size: 2.1rem;
-    }
-    header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    /* Luxury glass effect for scrolling */
-    background-color: rgba(249, 248, 246, 0.85);
-    /* Frosty oat color */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    /* Safari support */
-    border-bottom: 1px solid rgba(19, 46, 36, 0.05);
-    /* Delicate separator line */
-
-    position: fixed;
-    /* This makes it stick to the top */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    /* Ensures it stays above all other images and text */
-}
-.product-visual {
-    flex: 1;
-    height: 50px;
-}
+    .product-visual {
+            flex: 1;
+            height: 550px;
+            /* Use 'contain' so the whole product fits without cropping, and 'no-repeat' so it doesn't tile */
+            background: url('image_621e6d.png') center/contain no-repeat;
+            background-color: transparent; /* Allows your site's oat color to show behind the image */
+            position: relative;
+            border-radius: 2px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
 }
