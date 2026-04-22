@@ -686,7 +686,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1%;
+    padding: 1rem;
     /* Luxury glass effect for scrolling */
     background-color: rgba(249, 248, 246, 0.85);
     /* Frosty oat color */
