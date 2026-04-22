@@ -704,4 +704,8 @@ footer {
     z-index: 999;
     /* Ensures it stays above all other images and text */
 }
+.product-visual {
+    flex: 1;
+    height: 50px;
+}
 }
