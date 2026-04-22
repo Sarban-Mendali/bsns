@@ -646,28 +646,53 @@ footer {
         padding: 4rem 5%;
     }
 
-    .product-visual {
-        height: 350px;
-    }
 
     /* Smaller image height */
-    .product-details h3 {
-        font-size: 2rem;
+  .featured-product {
+        padding: 3rem 5%;
     }
 
-    .product-details p {
-        font-size: 0.85rem;
+    /* Force product to stay side-by-side on phones */
+    .product-grid {
+        flex-direction: row !important; 
+        gap: 1.5rem !important; 
+        align-items: center;
+    }
+
+    .product-visual {
+        flex: 1;
+        height: 280px !important; /* Shrink image height so it fits the row */
     }
 
     .product-details {
+        flex: 1.2; /* Gives the text slightly more room to breathe than the image */
         padding-right: 0;
-        text-align: center;
+        text-align: left !important;
     }
-    .product-visual::after {
-            font-size: 4rem; /* Shrinks the 25g text for mobile */
-            bottom: -10px;
-            right: 0;
-        }
+
+    /* Micro-typography to fit the split phone screen */
+    .product-details .section-label {
+        font-size: 0.55rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .product-details h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.5rem !important;
+        line-height: 1.1;
+    }
+
+    .product-details p {
+        font-size: 0.7rem !important;
+        margin-bottom: 1rem !important;
+        line-height: 1.4;
+    }
+
+    .product-details .btn {
+        padding: 10px 20px;
+        font-size: 0.65rem;
+    }
+}
 
     footer {
         flex-direction: column;
@@ -679,7 +704,7 @@ footer {
     .footer-links {
         text-align: center;
     }
-}
+
 
 @media (max-width: 480px) {
     .ingredient-grid {
